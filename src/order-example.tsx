@@ -93,7 +93,7 @@ export const OrderExample = () => {
               borderColor={"neutralDefault"}
               marginY={4}
             >
-              <Text>{`The last order #${lastOrder.number}:`}</Text>
+              <Text data-test-id="last-order-number" data-test-value={lastOrder.number}>{`The last order #${lastOrder.number}:`}</Text>
               <ul>
                 <li>
                   <Text>{`Contains ${generateNumberOfLinesText(lastOrder.lines)} 🛒`}</Text>

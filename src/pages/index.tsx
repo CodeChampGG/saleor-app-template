@@ -71,7 +71,7 @@ const IndexPage: NextPage = () => {
       </Text>
       {appBridgeState?.ready && mounted && (
         <Link href="/actions">
-          <Button variant="secondary">See what your app can do →</Button>
+          <Button variant="secondary" data-test-id="see-what-your-app-can-do">See what your app can do →</Button>
         </Link>
       )}
 
